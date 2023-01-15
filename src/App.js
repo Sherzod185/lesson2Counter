@@ -3,9 +3,8 @@ class App extends React.Component {
   state = {
     count: 0,
   };
-  changeOne = () => { this.setState({ count: this.state.count + 1,});};
-  reset = () => { this.setState({count: 0,});};
-  deleteOne = () => {this.setState({count: this.state.count - 1});};
+  changeOne = (change) => { this.setState({ count: change});};
+  reset = () => { this.setState({count: 0})}
 
   render() {
     return (
@@ -13,13 +12,13 @@ class App extends React.Component {
         <h1 className="title">Counter</h1>
         <span className="count">{this.state.count}</span>
         <div className="buttonBlock">
-          <button className="btn1" onClick={this.deleteOne}>
+          <button className="btn1" onClick={()=>this.changeOne(this.state.count-1)}>
             Delete-1
           </button>
           <button className="btn2" onClick={this.reset}>
             Reset
           </button>
-          <button className="btn3" onClick={this.changeOne}>
+          <button className="btn3" onClick={()=>this.changeOne(this.state.count+1)}>
             ADD+1
           </button>
         </div>
