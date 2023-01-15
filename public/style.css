@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #e5e5e5;
+  font-family: sans-serif;
+}
+.counter{
+  max-width: 400px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  background-color: rgb(112, 109, 109);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(93, 77, 77) ;
+}
+.title{
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 15px;
+  background-color: rgba(118, 185, 181, 0.758);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0.3px 0.3px 5px rgb(232, 242, 164) ;
+}
+.count{
+  padding: 10px;
+  background-color:rgba(248, 245, 245, 0.651);
+  border-radius: 10px;
+  font-size: 30px;
+  display: block;
+  margin-bottom: 30px;
+}
+.btn1, .btn2, .btn3{
+  width: 95px;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.btn2{
+  margin-right: 13px;
+  margin-left: 13px;
+  background-color: green;
+}
+.btn2:active{
+  background-color: rgb(34, 161, 34);
+}
+.btn3{
+  background-color: blue;
+}
+.btn3:active{
+  background-color: rgb(41, 41, 169);
+}
+.btn1{
+  background-color: red;
+}
+.btn1:active{
+  background-color: rgb(190, 47, 47);
+}
